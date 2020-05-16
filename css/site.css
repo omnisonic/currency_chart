@@ -1,13 +1,26 @@
+
+
+
+/* css variable for background color */
+:root {
+  --main-bg-color: green;    
+} 
+
+/* position of the chart */
 .column-chart {
   position: relative;
 }
+
+/* border color of bars and chart*/
 .chart-column,
-.plot-container {
+.chart-container {
   list-style: none;
   border: 5px solid #000;
 }
 
-.plot-container {
+
+.chart-container {
+  background-color: var(--main-bg-color);
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: row;
@@ -25,11 +38,12 @@
   min-height: 100px;
 }
 
-.plot-container li { 
+/* transition of color and width */
+.chart-container li { 
   transition: width 2s, opacity 1s;
 }
 
-.plot-container li:hover { 
+.chart-container li:hover { 
   opacity: 0.8; 
   width: 60px;
 
@@ -47,11 +61,8 @@
   color: #ffffff;
   box-sizing: border-box;
 }
-/* 
-.bar-chart {
-  clear: both;
-} */
-.bar-chart .plot-container {
+
+.bar-chart .chart-container {
   flex-direction: column;
   padding: 0;
   margin: 0;
