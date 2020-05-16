@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=1" />
+        <link media="all" rel="stylesheet" type="text/css" href="./css/chart2.css" />
+
+        <title>Exchange Rate Chart</title>
+        <style>
+			body { font-family: sans-serif; color: #444444; }
+			.column-chart, .bar-chart, .scatter-plot { margin: 20px; border: 1px solid #3498db; }
+            .scatter-plot, .column-chart { height: 500px; }
+			.bar-chart.stacked [data-cp-size] { min-height: 0.655em; }
+			.bar-chart [data-cp-size],
+			.bar-chart.stacked .pad [data-cp-size] { min-height: 0.8em; }
+			.pad ul [data-cp-size] { padding: 8px; }
+			a { color: #3498db; text-decoration: none; }
+			.plot-container li:hover { opacity: 0.8; }
+			img.github { position: absolute; top: 0; right: 0; }
+            li { list-style: none; }
+		</style>
+
+    </head>
+<div>
+
+    <h2>Exchange Rate Chart</h2>
+    <div>
+        <div class="column-chart">
+            <ul class="plot-container">
+                <li onclick="alert('EUR costs 1.00 EUR')" class="chart-column" style="height: 50.0%">EUR</li>
+                <li onclick="alert('USD costs 0.926 EUR')" class="chart-column" style="height: 46.3%">USD</li>
+                <li onclick="alert('AUD costs 0.594 EUR')" class="chart-column" style="height: 29.7%">AUD</li>
+                <li onclick="alert('GBP costs 1.127 EUR')" class="chart-column" style="height: 56.36%">GBP</li>
+                <li onclick="alert('BRL costs 0.16 EUR')" class="chart-column" style="height: 08.0%">BRL</li>
+
+            </ul>
+        </div>
+    </div>
+    
+</div>
